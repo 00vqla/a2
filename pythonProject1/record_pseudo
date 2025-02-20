@@ -1,0 +1,10 @@
+TYPE
+    TRecord
+        DECLARE Name:STRING
+        DECLARE Dept:STRING
+        DECLARE Salary:CURRENCY
+ENDTYPE
+
+    TRecord.Name <- "Phan"
+    TRecord.Dept <- "2"
+    TRecord.Salary <- 100

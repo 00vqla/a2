@@ -1,0 +1,18 @@
+Contains no references to other data types when it is defined.
+
+TYPE <identifier> = (value1, value2, value3...)
+
+---
+TYPE Tmonth = (Jan, Feb, Mar, ...,Dec)
+
+DECLARE thisMonth: Tmonth
+DECLARE nextMonth: Tmonth
+thisMonth <- January
+nextMonth <- thisMonth + 1
+---
+Type Tseason = (Spring, Summer, Fall, Winter)
+
+DECLARE thisSeason: Tseason
+DECLARE nextSeason: Tseason
+thisSeason <- Spring
+nextSeason <- thisSeason + 1
