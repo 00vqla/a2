@@ -7,13 +7,3 @@ ArrayNodes = (
 FreeNode = 6
 RootPointer = 0
 
-
-# task 3.6b
-
-class node:
-    def __init__(self, data, nextNode):
-        self.data = data
-        self.nextNode = nextNode
-
-def addNode():
-
