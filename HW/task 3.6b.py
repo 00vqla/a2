@@ -4,18 +4,10 @@ class node:
         self.nextNode = nextNode
 
 
-linkedList = [node(1,1), node(5, 4), node(6,7), node(7, -1), node(2,2), node(0, 6), node(0, 8), node(56, 3), node(0, 9), node(0, -1)]
-startPointer = 0
-emptyList = 5
-
-
 def outputNodes(linkedList, startPointer):
     while startPointer != -1:
         print(str(linkedList[startPointer].data))
         startPointer = linkedList[startPointer].nextNode
-
-
-outputNodes(linkedList, startPointer)
 
 
 def addNode(linkedList, startPointer, emptyList):
@@ -35,5 +27,14 @@ def addNode(linkedList, startPointer, emptyList):
 
         return True
 
-addNode(linkedList, startPointer, emptyList)
+
+linkedList = [node(1, 1), node(5, 4), node(6, 7), node(7, -1), node(2, 2), node(0, 6), node(0, 8), node(56, 3),
+              node(0, 9), node(0, -1)]
+startPointer = 0
+emptyList = 5
+
+if addNode(linkedList, startPointer, emptyList) == True:
+    print("data has been added successfully")
+else:
+    print("list is full, data was not added.")
 outputNodes(linkedList, startPointer)
