@@ -33,6 +33,8 @@ linkedList = [node(1, 1), node(5, 4), node(6, 7), node(7, -1), node(2, 2), node(
 startPointer = 0
 emptyList = 5
 
+outputNodes(linkedList, startPointer)
+
 if addNode(linkedList, startPointer, emptyList) == True:
     print("data has been added successfully")
 else:
